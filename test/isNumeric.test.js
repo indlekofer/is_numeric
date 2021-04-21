@@ -26,6 +26,9 @@ describe('isNumeric true checks', () => {
   });
 });
 describe('isNumeric false checks', () => {
+  it('null', () => {
+    assert.equal(false, isNumeric(null));
+  });
   it('empty string', () => {
     assert.equal(false, isNumeric(""));
   });
